@@ -1,0 +1,294 @@
+2025-07-02 23:58:04,538 p=63395 u=aakhrif n=ansible ERROR| ERROR! Empty playbook, nothing to do: /home/aakhrif/cloud-1/ansible/playbooks/main.yaml
+2025-07-03 00:02:12,214 p=64375 u=aakhrif n=ansible WARNING| [WARNING]: Could not match supplied host pattern, ignoring: hosts
+
+2025-07-03 00:02:12,215 p=64375 u=aakhrif n=ansible INFO| PLAY [test ssh] ************************************************************************************************************************************************************************
+2025-07-03 00:02:12,215 p=64375 u=aakhrif n=ansible INFO| skipping: no hosts matched
+2025-07-03 00:02:12,215 p=64375 u=aakhrif n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
+2025-07-03 00:02:23,353 p=64419 u=aakhrif n=ansible INFO| PLAY [test ssh] ************************************************************************************************************************************************************************
+2025-07-03 00:02:23,369 p=64419 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-03 00:02:24,517 p=64419 u=aakhrif n=ansible INFO| fatal: [138.197.125.108]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '138.197.125.108' (ED25519) to the list of known hosts.\r\naakhrif@138.197.125.108: Permission denied (publickey).", "unreachable": true}
+2025-07-03 00:02:24,518 p=64419 u=aakhrif n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
+2025-07-03 00:02:24,518 p=64419 u=aakhrif n=ansible INFO| 138.197.125.108            : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2025-07-03 00:02:30,399 p=64468 u=aakhrif n=ansible INFO| PLAY [test ssh] ************************************************************************************************************************************************************************
+2025-07-03 00:02:30,403 p=64468 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-03 00:02:31,553 p=64468 u=aakhrif n=ansible INFO| fatal: [138.197.125.108]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: aakhrif@138.197.125.108: Permission denied (publickey).", "unreachable": true}
+2025-07-03 00:02:31,554 p=64468 u=aakhrif n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
+2025-07-03 00:02:31,554 p=64468 u=aakhrif n=ansible INFO| 138.197.125.108            : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2025-07-03 00:03:06,177 p=64599 u=aakhrif n=ansible WARNING| [WARNING]:  * Failed to parse /home/aakhrif/cloud-1/ansible/inventory/hosts.ini with ini plugin: /home/aakhrif/cloud-1/ansible/inventory/hosts.ini:2: Expected key=value host variable
+assignment, got: -o
+
+2025-07-03 00:03:06,177 p=64599 u=aakhrif n=ansible WARNING| [WARNING]: Unable to parse /home/aakhrif/cloud-1/ansible/inventory/hosts.ini as an inventory source
+
+2025-07-03 00:03:06,177 p=64599 u=aakhrif n=ansible WARNING| [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-07-03 00:03:06,179 p=64599 u=aakhrif n=ansible WARNING| [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2025-07-03 00:03:06,330 p=64599 u=aakhrif n=ansible INFO| PLAY [test ssh] ************************************************************************************************************************************************************************
+2025-07-03 00:03:06,330 p=64599 u=aakhrif n=ansible INFO| skipping: no hosts matched
+2025-07-03 00:03:06,330 p=64599 u=aakhrif n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
+2025-07-03 00:03:14,577 p=64642 u=aakhrif n=ansible INFO| PLAY [test ssh] ************************************************************************************************************************************************************************
+2025-07-03 00:03:14,581 p=64642 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-03 00:03:15,731 p=64642 u=aakhrif n=ansible INFO| fatal: [138.197.125.108]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: aakhrif@138.197.125.108: Permission denied (publickey).", "unreachable": true}
+2025-07-03 00:03:15,732 p=64642 u=aakhrif n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
+2025-07-03 00:03:15,732 p=64642 u=aakhrif n=ansible INFO| 138.197.125.108            : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2025-07-03 00:04:49,901 p=65278 u=aakhrif n=ansible INFO| PLAY [test ssh] ************************************************************************************************************************************************************************
+2025-07-03 00:04:49,906 p=65278 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-03 00:04:51,434 p=65278 u=aakhrif n=ansible INFO| fatal: [167.172.249.58]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '167.172.249.58' (ED25519) to the list of known hosts.\r\naakhrif@167.172.249.58: Permission denied (publickey).", "unreachable": true}
+2025-07-03 00:04:51,437 p=65278 u=aakhrif n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
+2025-07-03 00:04:51,437 p=65278 u=aakhrif n=ansible INFO| 167.172.249.58             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2025-07-03 00:07:01,881 p=65718 u=aakhrif n=ansible INFO| PLAY [test ssh] ************************************************************************************************************************************************************************
+2025-07-03 00:07:01,886 p=65718 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-03 00:07:03,113 p=65718 u=aakhrif n=ansible INFO| fatal: [167.172.249.58]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ubuntu@167.172.249.58: Permission denied (publickey).", "unreachable": true}
+2025-07-03 00:07:03,114 p=65718 u=aakhrif n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
+2025-07-03 00:07:03,115 p=65718 u=aakhrif n=ansible INFO| 167.172.249.58             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2025-07-03 00:07:50,102 p=65856 u=aakhrif n=ansible INFO| PLAY [test ssh] ************************************************************************************************************************************************************************
+2025-07-03 00:07:50,107 p=65856 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-03 00:07:51,271 p=65856 u=aakhrif n=ansible INFO| fatal: [167.172.249.58]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ubuntu@167.172.249.58: Permission denied (publickey).", "unreachable": true}
+2025-07-03 00:07:51,272 p=65856 u=aakhrif n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
+2025-07-03 00:07:51,272 p=65856 u=aakhrif n=ansible INFO| 167.172.249.58             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2025-07-03 00:08:46,345 p=66089 u=aakhrif n=ansible INFO| PLAY [test ssh] ************************************************************************************************************************************************************************
+2025-07-03 00:08:46,351 p=66089 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-03 00:08:47,673 p=66089 u=aakhrif n=ansible INFO| fatal: [167.172.249.58]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ubuntu@167.172.249.58: Permission denied (publickey).", "unreachable": true}
+2025-07-03 00:08:47,674 p=66089 u=aakhrif n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
+2025-07-03 00:08:47,675 p=66089 u=aakhrif n=ansible INFO| 167.172.249.58             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2025-07-03 00:09:20,160 p=66325 u=aakhrif n=ansible INFO| PLAY [test ssh] ************************************************************************************************************************************************************************
+2025-07-03 00:09:20,165 p=66325 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-03 00:09:38,489 p=66325 u=aakhrif n=ansible WARNING| [WARNING]: Platform linux on host 167.172.249.58 is using the discovered Python interpreter at /usr/bin/python3.8, but future installation of another Python interpreter could change
+the meaning of that path. See https://docs.ansible.com/ansible-core/2.18/reference_appendices/interpreter_discovery.html for more information.
+
+2025-07-03 00:09:38,489 p=66325 u=aakhrif n=ansible INFO| ok: [167.172.249.58]
+2025-07-03 00:09:38,496 p=66325 u=aakhrif n=ansible INFO| TASK [test ssh] ************************************************************************************************************************************************************************
+2025-07-03 00:09:38,511 p=66325 u=aakhrif n=ansible INFO| ok: [167.172.249.58] => {
+    "msg": "Test ssh"
+}
+2025-07-03 00:09:38,512 p=66325 u=aakhrif n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
+2025-07-03 00:09:38,512 p=66325 u=aakhrif n=ansible INFO| 167.172.249.58             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-07-03 00:19:21,212 p=68967 u=aakhrif n=ansible WARNING| [WARNING]:  * Failed to parse /home/aakhrif/cloud-1/ansible/inventory/hosts.ini with ini plugin: not enough values to unpack (expected 3, got 2)
+
+2025-07-03 00:19:21,212 p=68967 u=aakhrif n=ansible WARNING| [WARNING]: Unable to parse /home/aakhrif/cloud-1/ansible/inventory/hosts.ini as an inventory source
+
+2025-07-03 00:19:21,212 p=68967 u=aakhrif n=ansible WARNING| [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-07-03 00:19:21,215 p=68967 u=aakhrif n=ansible WARNING| [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2025-07-03 00:19:21,419 p=68967 u=aakhrif n=ansible INFO| PLAY [test ssh] ************************************************************************************************************************************************************************
+2025-07-03 00:19:21,419 p=68967 u=aakhrif n=ansible INFO| skipping: no hosts matched
+2025-07-03 00:19:21,419 p=68967 u=aakhrif n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
+2025-07-03 00:32:40,719 p=72252 u=aakhrif n=ansible INFO| PLAY [test ssh] ************************************************************************************************************************************************************************
+2025-07-03 00:32:40,730 p=72252 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-03 00:33:02,663 p=72252 u=aakhrif n=ansible WARNING| [WARNING]: Platform linux on host 165.227.67.170 is using the discovered Python interpreter at /usr/bin/python3.8, but future installation of another Python interpreter could change
+the meaning of that path. See https://docs.ansible.com/ansible-core/2.18/reference_appendices/interpreter_discovery.html for more information.
+
+2025-07-03 00:33:02,663 p=72252 u=aakhrif n=ansible INFO| ok: [165.227.67.170]
+2025-07-03 00:33:02,679 p=72252 u=aakhrif n=ansible INFO| TASK [test ssh] ************************************************************************************************************************************************************************
+2025-07-03 00:33:02,705 p=72252 u=aakhrif n=ansible INFO| ok: [165.227.67.170] => {
+    "msg": "Test ssh"
+}
+2025-07-03 00:33:02,708 p=72252 u=aakhrif n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
+2025-07-03 00:33:02,709 p=72252 u=aakhrif n=ansible INFO| 165.227.67.170             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-07-03 00:43:43,056 p=74116 u=aakhrif n=ansible INFO| playbook: ./playbooks/main.yaml
+2025-07-03 00:43:50,054 p=74165 u=aakhrif n=ansible INFO| PLAY [test ssh] ************************************************************************************************************************************************************************
+2025-07-03 00:43:50,074 p=74165 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-03 00:44:08,440 p=74165 u=aakhrif n=ansible WARNING| [WARNING]: Platform linux on host 165.227.67.170 is using the discovered Python interpreter at /usr/bin/python3.8, but future installation of another Python interpreter could change
+the meaning of that path. See https://docs.ansible.com/ansible-core/2.18/reference_appendices/interpreter_discovery.html for more information.
+
+2025-07-03 00:44:08,440 p=74165 u=aakhrif n=ansible INFO| ok: [165.227.67.170]
+2025-07-03 00:44:08,459 p=74165 u=aakhrif n=ansible INFO| TASK [copy inception into the cloud machine] *******************************************************************************************************************************************
+2025-07-03 00:47:55,333 p=74165 u=aakhrif n=ansible ERROR|  [ERROR]: User interrupted execution
+
+2025-07-03 00:48:21,127 p=75032 u=aakhrif n=ansible INFO| PLAY [test ssh] ************************************************************************************************************************************************************************
+2025-07-03 00:48:21,134 p=75032 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-03 00:48:26,822 p=75032 u=aakhrif n=ansible ERROR|  [ERROR]: User interrupted execution
+
+2025-07-03 00:48:31,654 p=75116 u=aakhrif n=ansible INFO| PLAY [test ssh] ************************************************************************************************************************************************************************
+2025-07-03 00:48:31,661 p=75116 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-03 00:48:50,903 p=75116 u=aakhrif n=ansible WARNING| [WARNING]: Platform linux on host 165.227.67.170 is using the discovered Python interpreter at /usr/bin/python3.8, but future installation of another Python interpreter could change
+the meaning of that path. See https://docs.ansible.com/ansible-core/2.18/reference_appendices/interpreter_discovery.html for more information.
+
+2025-07-03 00:48:50,903 p=75116 u=aakhrif n=ansible INFO| ok: [165.227.67.170]
+2025-07-03 00:48:50,907 p=75116 u=aakhrif n=ansible INFO| TASK [copy inception into the cloud machine] *******************************************************************************************************************************************
+2025-07-03 00:49:17,905 p=75116 u=aakhrif n=ansible INFO| fatal: [165.227.67.170]: FAILED! => {"changed": false, "checksum": "594109d64f3a94cef508763f5d98828cb0ec0e29", "msg": "Unsupported parameters for (ansible.legacy.copy) module: recursive. Supported parameters include: _original_basename, attributes, backup, checksum, content, dest, directory_mode, follow, force, group, local_follow, mode, owner, remote_src, selevel, serole, setype, seuser, src, unsafe_writes, validate (attr)."}
+2025-07-03 00:49:17,906 p=75116 u=aakhrif n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
+2025-07-03 00:49:17,906 p=75116 u=aakhrif n=ansible INFO| 165.227.67.170             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-07-03 00:49:43,720 p=75406 u=aakhrif n=ansible INFO| PLAY [test ssh] ************************************************************************************************************************************************************************
+2025-07-03 00:49:43,725 p=75406 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-03 00:50:04,312 p=75406 u=aakhrif n=ansible WARNING| [WARNING]: Platform linux on host 165.227.67.170 is using the discovered Python interpreter at /usr/bin/python3.8, but future installation of another Python interpreter could change
+the meaning of that path. See https://docs.ansible.com/ansible-core/2.18/reference_appendices/interpreter_discovery.html for more information.
+
+2025-07-03 00:50:04,312 p=75406 u=aakhrif n=ansible INFO| ok: [165.227.67.170]
+2025-07-03 00:50:04,316 p=75406 u=aakhrif n=ansible INFO| TASK [copy inception into the cloud machine] *******************************************************************************************************************************************
+2025-07-03 00:50:33,359 p=75406 u=aakhrif n=ansible INFO| fatal: [165.227.67.170]: FAILED! => {"changed": false, "checksum": "594109d64f3a94cef508763f5d98828cb0ec0e29", "msg": "Unsupported parameters for (ansible.legacy.copy) module: recursive. Supported parameters include: _original_basename, attributes, backup, checksum, content, dest, directory_mode, follow, force, group, local_follow, mode, owner, remote_src, selevel, serole, setype, seuser, src, unsafe_writes, validate (attr)."}
+2025-07-03 00:50:33,359 p=75406 u=aakhrif n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
+2025-07-03 00:50:33,359 p=75406 u=aakhrif n=ansible INFO| 165.227.67.170             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-07-03 00:52:05,715 p=75828 u=aakhrif n=ansible INFO| PLAY [test ssh] ************************************************************************************************************************************************************************
+2025-07-03 00:52:05,727 p=75828 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-03 00:52:24,376 p=75828 u=aakhrif n=ansible WARNING| [WARNING]: Platform linux on host 165.227.67.170 is using the discovered Python interpreter at /usr/bin/python3.8, but future installation of another Python interpreter could change
+the meaning of that path. See https://docs.ansible.com/ansible-core/2.18/reference_appendices/interpreter_discovery.html for more information.
+
+2025-07-03 00:52:24,376 p=75828 u=aakhrif n=ansible INFO| ok: [165.227.67.170]
+2025-07-03 00:52:24,383 p=75828 u=aakhrif n=ansible INFO| TASK [copy inception into the cloud machine] *******************************************************************************************************************************************
+2025-07-03 00:54:57,047 p=75828 u=aakhrif n=ansible ERROR|  [ERROR]: User interrupted execution
+
+2025-07-03 00:56:03,816 p=76513 u=aakhrif n=ansible INFO| PLAY [test ssh] ************************************************************************************************************************************************************************
+2025-07-03 00:56:03,821 p=76513 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-03 00:56:31,558 p=76513 u=aakhrif n=ansible WARNING| [WARNING]: Platform linux on host 165.227.67.170 is using the discovered Python interpreter at /usr/bin/python3.8, but future installation of another Python interpreter could change
+the meaning of that path. See https://docs.ansible.com/ansible-core/2.18/reference_appendices/interpreter_discovery.html for more information.
+
+2025-07-03 00:56:31,558 p=76513 u=aakhrif n=ansible INFO| ok: [165.227.67.170]
+2025-07-03 00:56:31,562 p=76513 u=aakhrif n=ansible INFO| TASK [copy inception into the cloud machine] *******************************************************************************************************************************************
+2025-07-03 00:58:42,914 p=76513 u=aakhrif n=ansible ERROR|  [ERROR]: User interrupted execution
+
+2025-07-03 00:58:52,892 p=77164 u=aakhrif n=ansible INFO| PLAY [test ssh] ************************************************************************************************************************************************************************
+2025-07-03 00:58:52,902 p=77164 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-03 00:59:09,099 p=77164 u=aakhrif n=ansible WARNING| [WARNING]: Platform linux on host 165.227.67.170 is using the discovered Python interpreter at /usr/bin/python3.8, but future installation of another Python interpreter could change
+the meaning of that path. See https://docs.ansible.com/ansible-core/2.18/reference_appendices/interpreter_discovery.html for more information.
+
+2025-07-03 00:59:09,099 p=77164 u=aakhrif n=ansible INFO| ok: [165.227.67.170]
+2025-07-03 00:59:09,107 p=77164 u=aakhrif n=ansible INFO| TASK [copy inception into the cloud machine] *******************************************************************************************************************************************
+2025-07-03 01:00:54,598 p=77164 u=aakhrif n=ansible ERROR|  [ERROR]: User interrupted execution
+
+2025-07-03 01:02:55,847 p=78423 u=aakhrif n=ansible INFO| PLAY [test ssh] ************************************************************************************************************************************************************************
+2025-07-03 01:02:55,852 p=78423 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-03 01:03:21,199 p=78423 u=aakhrif n=ansible WARNING| [WARNING]: Platform linux on host 167.71.251.97 is using the discovered Python interpreter at /usr/bin/python3.8, but future installation of another Python interpreter could change
+the meaning of that path. See https://docs.ansible.com/ansible-core/2.18/reference_appendices/interpreter_discovery.html for more information.
+
+2025-07-03 01:03:21,200 p=78423 u=aakhrif n=ansible INFO| ok: [167.71.251.97]
+2025-07-03 01:03:21,203 p=78423 u=aakhrif n=ansible INFO| TASK [copy inception into the cloud machine] *******************************************************************************************************************************************
+2025-07-03 01:07:23,685 p=78423 u=aakhrif n=ansible ERROR|  [ERROR]: User interrupted execution
+
+2025-07-03 01:09:19,649 p=80225 u=aakhrif n=ansible INFO| PLAY [test ssh] ************************************************************************************************************************************************************************
+2025-07-03 01:09:19,657 p=80225 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-03 01:09:41,533 p=80225 u=aakhrif n=ansible WARNING| [WARNING]: Platform linux on host 167.172.24.191 is using the discovered Python interpreter at /usr/bin/python3.8, but future installation of another Python interpreter could change
+the meaning of that path. See https://docs.ansible.com/ansible-core/2.18/reference_appendices/interpreter_discovery.html for more information.
+
+2025-07-03 01:09:41,533 p=80225 u=aakhrif n=ansible INFO| ok: [167.172.24.191]
+2025-07-03 01:09:41,544 p=80225 u=aakhrif n=ansible INFO| TASK [copy inception into the cloud machine] *******************************************************************************************************************************************
+2025-07-03 01:09:43,895 p=80225 u=aakhrif n=ansible INFO| fatal: [167.172.24.191]: FAILED! => {"changed": false, "cmd": "/usr/bin/rsync --delay-updates -F --compress --checksum --archive --rsh='/usr/bin/ssh -S none -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null' --out-format='<<CHANGED>>%i %n%L' /path/to/local/directory/ root@167.172.24.191:/path/to/remote/destination/", "msg": "Warning: Permanently added '167.172.24.191' (ED25519) to the list of known hosts.\r\nrsync: [sender] change_dir \"/path/to/local/directory\" failed: No such file or directory (2)\nrsync: mkdir \"/path/to/remote/destination\" failed: No such file or directory (2)\nrsync error: error in file IO (code 11) at main.c(679) [Receiver=3.1.3]\n", "rc": 11}
+2025-07-03 01:09:43,895 p=80225 u=aakhrif n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
+2025-07-03 01:09:43,896 p=80225 u=aakhrif n=ansible INFO| 167.172.24.191             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-07-03 01:11:41,957 p=80708 u=aakhrif n=ansible INFO| PLAY [cloud-1] *************************************************************************************************************************************************************************
+2025-07-03 01:11:41,964 p=80708 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-03 01:11:58,990 p=80708 u=aakhrif n=ansible WARNING| [WARNING]: Platform linux on host 167.172.24.191 is using the discovered Python interpreter at /usr/bin/python3.8, but future installation of another Python interpreter could change
+the meaning of that path. See https://docs.ansible.com/ansible-core/2.18/reference_appendices/interpreter_discovery.html for more information.
+
+2025-07-03 01:11:58,991 p=80708 u=aakhrif n=ansible INFO| ok: [167.172.24.191]
+2025-07-03 01:11:58,994 p=80708 u=aakhrif n=ansible INFO| TASK [copy inception into the cloud machine] *******************************************************************************************************************************************
+2025-07-03 01:12:02,931 p=80708 u=aakhrif n=ansible INFO| changed: [167.172.24.191]
+2025-07-03 01:12:02,932 p=80708 u=aakhrif n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
+2025-07-03 01:12:02,932 p=80708 u=aakhrif n=ansible INFO| 167.172.24.191             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-07-03 01:32:51,394 p=84315 u=aakhrif n=ansible ERROR| ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected '-' indicator. while parsing a block collection
+  in "<unicode string>", line 5, column 5
+did not find expected '-' indicator
+  in "<unicode string>", line 12, column 5
+
+The error appears to be in '/home/aakhrif/cloud-1/ansible/playbooks/requirements.yaml': line 12, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+    -name: installing docker
+    ^ here
+
+2025-07-03 01:33:29,636 p=84568 u=aakhrif n=ansible INFO| PLAY [cloud-1] *************************************************************************************************************************************************************************
+2025-07-03 01:33:29,666 p=84568 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-03 01:33:49,357 p=84568 u=aakhrif n=ansible WARNING| [WARNING]: Platform linux on host 45.55.71.227 is using the discovered Python interpreter at /usr/bin/python3.8, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.18/reference_appendices/interpreter_discovery.html for more information.
+
+2025-07-03 01:33:49,358 p=84568 u=aakhrif n=ansible INFO| ok: [45.55.71.227]
+2025-07-03 01:33:49,364 p=84568 u=aakhrif n=ansible INFO| TASK [copy inception into the cloud machine] *******************************************************************************************************************************************
+2025-07-03 01:33:52,961 p=84568 u=aakhrif n=ansible INFO| changed: [45.55.71.227]
+2025-07-03 01:33:52,963 p=84568 u=aakhrif n=ansible INFO| PLAY [installing dependencies] *********************************************************************************************************************************************************
+2025-07-03 01:33:52,968 p=84568 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-03 01:34:05,323 p=84568 u=aakhrif n=ansible INFO| ok: [45.55.71.227]
+2025-07-03 01:34:05,328 p=84568 u=aakhrif n=ansible INFO| TASK [updating packages] ***************************************************************************************************************************************************************
+2025-07-03 01:34:05,342 p=84568 u=aakhrif n=ansible INFO| skipping: [45.55.71.227]
+2025-07-03 01:34:05,344 p=84568 u=aakhrif n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
+2025-07-03 01:34:05,345 p=84568 u=aakhrif n=ansible INFO| 45.55.71.227               : ok=3    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2025-07-03 01:36:11,290 p=85330 u=aakhrif n=ansible INFO| PLAY [cloud-1] *************************************************************************************************************************************************************************
+2025-07-03 01:36:11,307 p=85330 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-03 01:36:28,387 p=85330 u=aakhrif n=ansible WARNING| [WARNING]: Platform linux on host 45.55.71.227 is using the discovered Python interpreter at /usr/bin/python3.8, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.18/reference_appendices/interpreter_discovery.html for more information.
+
+2025-07-03 01:36:28,387 p=85330 u=aakhrif n=ansible INFO| ok: [45.55.71.227]
+2025-07-03 01:36:28,393 p=85330 u=aakhrif n=ansible INFO| TASK [copy inception into the cloud machine] *******************************************************************************************************************************************
+2025-07-03 01:36:31,202 p=85330 u=aakhrif n=ansible INFO| ok: [45.55.71.227]
+2025-07-03 01:36:31,204 p=85330 u=aakhrif n=ansible INFO| PLAY [installing dependencies] *********************************************************************************************************************************************************
+2025-07-03 01:36:31,208 p=85330 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-03 01:36:44,461 p=85330 u=aakhrif n=ansible INFO| ok: [45.55.71.227]
+2025-07-03 01:36:44,464 p=85330 u=aakhrif n=ansible INFO| TASK [updating packages] ***************************************************************************************************************************************************************
+2025-07-03 01:38:52,044 p=85330 u=aakhrif n=ansible INFO| changed: [45.55.71.227]
+2025-07-03 01:38:52,058 p=85330 u=aakhrif n=ansible INFO| TASK [installing docker and make] ******************************************************************************************************************************************************
+2025-07-03 01:39:31,196 p=85330 u=aakhrif n=ansible INFO| changed: [45.55.71.227]
+2025-07-03 01:39:31,205 p=85330 u=aakhrif n=ansible INFO| TASK [start and enable docker service] *************************************************************************************************************************************************
+2025-07-03 01:39:44,961 p=85330 u=aakhrif n=ansible INFO| ok: [45.55.71.227]
+2025-07-03 01:39:44,970 p=85330 u=aakhrif n=ansible INFO| TASK [add user to docker group] ********************************************************************************************************************************************************
+2025-07-03 01:39:57,359 p=85330 u=aakhrif n=ansible INFO| changed: [45.55.71.227]
+2025-07-03 01:39:57,360 p=85330 u=aakhrif n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
+2025-07-03 01:39:57,360 p=85330 u=aakhrif n=ansible INFO| 45.55.71.227               : ok=7    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-07-03 01:41:56,713 p=86605 u=aakhrif n=ansible INFO| PLAY [cloud-1] *************************************************************************************************************************************************************************
+2025-07-03 01:41:56,723 p=86605 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-03 01:42:14,814 p=86605 u=aakhrif n=ansible WARNING| [WARNING]: Platform linux on host 45.55.71.227 is using the discovered Python interpreter at /usr/bin/python3.8, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.18/reference_appendices/interpreter_discovery.html for more information.
+
+2025-07-03 01:42:14,814 p=86605 u=aakhrif n=ansible INFO| ok: [45.55.71.227]
+2025-07-03 01:42:14,819 p=86605 u=aakhrif n=ansible INFO| TASK [copy inception into the cloud machine] *******************************************************************************************************************************************
+2025-07-03 01:42:17,450 p=86605 u=aakhrif n=ansible INFO| ok: [45.55.71.227]
+2025-07-03 01:42:17,451 p=86605 u=aakhrif n=ansible INFO| PLAY [installing dependencies] *********************************************************************************************************************************************************
+2025-07-03 01:42:17,456 p=86605 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-03 01:42:31,996 p=86605 u=aakhrif n=ansible INFO| ok: [45.55.71.227]
+2025-07-03 01:42:32,002 p=86605 u=aakhrif n=ansible INFO| TASK [updating packages] ***************************************************************************************************************************************************************
+2025-07-03 01:42:49,705 p=86605 u=aakhrif n=ansible INFO| ok: [45.55.71.227]
+2025-07-03 01:42:49,709 p=86605 u=aakhrif n=ansible INFO| TASK [installing docker and make] ******************************************************************************************************************************************************
+2025-07-03 01:43:04,476 p=86605 u=aakhrif n=ansible INFO| ok: [45.55.71.227]
+2025-07-03 01:43:04,485 p=86605 u=aakhrif n=ansible INFO| TASK [start and enable docker service] *************************************************************************************************************************************************
+2025-07-03 01:43:19,299 p=86605 u=aakhrif n=ansible INFO| ok: [45.55.71.227]
+2025-07-03 01:43:19,310 p=86605 u=aakhrif n=ansible INFO| TASK [add user to docker group] ********************************************************************************************************************************************************
+2025-07-03 01:43:33,426 p=86605 u=aakhrif n=ansible INFO| ok: [45.55.71.227]
+2025-07-03 01:43:33,433 p=86605 u=aakhrif n=ansible INFO| TASK [install docker compose] **********************************************************************************************************************************************************
+2025-07-03 01:43:47,797 p=86605 u=aakhrif n=ansible INFO| changed: [45.55.71.227]
+2025-07-03 01:43:47,808 p=86605 u=aakhrif n=ansible INFO| TASK [create docker-compose symlink (optional)] ****************************************************************************************************************************************
+2025-07-03 01:44:03,126 p=86605 u=aakhrif n=ansible INFO| changed: [45.55.71.227]
+2025-07-03 01:44:03,136 p=86605 u=aakhrif n=ansible INFO| TASK [verify docker compose installation] **********************************************************************************************************************************************
+2025-07-03 01:44:17,821 p=86605 u=aakhrif n=ansible INFO| changed: [45.55.71.227]
+2025-07-03 01:44:17,840 p=86605 u=aakhrif n=ansible INFO| TASK [display docker compose version] **************************************************************************************************************************************************
+2025-07-03 01:44:17,858 p=86605 u=aakhrif n=ansible INFO| ok: [45.55.71.227] => {
+    "msg": "Docker Compose installed: Docker Compose version v2.38.1"
+}
+2025-07-03 01:44:17,861 p=86605 u=aakhrif n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
+2025-07-03 01:44:17,861 p=86605 u=aakhrif n=ansible INFO| 45.55.71.227               : ok=11   changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-07-03 01:47:05,896 p=88327 u=aakhrif n=ansible INFO| PLAY [cloud-1] *************************************************************************************************************************************************************************
+2025-07-03 01:47:05,906 p=88327 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-03 01:47:06,112 p=88327 u=aakhrif n=ansible INFO| fatal: [159.203.165.30]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 159.203.165.30 port 22: Connection refused", "unreachable": true}
+2025-07-03 01:47:06,113 p=88327 u=aakhrif n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
+2025-07-03 01:47:06,113 p=88327 u=aakhrif n=ansible INFO| 159.203.165.30             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2025-07-03 01:50:12,420 p=89113 u=aakhrif n=ansible INFO| PLAY [cloud-1] *************************************************************************************************************************************************************************
+2025-07-03 01:50:12,424 p=89113 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-03 01:50:18,466 p=89113 u=aakhrif n=ansible INFO| fatal: [159.203.140.65]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 159.203.140.65 port 22: Connection refused", "unreachable": true}
+2025-07-03 01:50:18,467 p=89113 u=aakhrif n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
+2025-07-03 01:50:18,470 p=89113 u=aakhrif n=ansible INFO| 159.203.140.65             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2025-07-03 01:52:06,621 p=89806 u=aakhrif n=ansible INFO| PLAY [cloud-1] *************************************************************************************************************************************************************************
+2025-07-03 01:52:06,630 p=89806 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-03 01:52:25,124 p=89806 u=aakhrif n=ansible WARNING| [WARNING]: Platform linux on host 159.203.140.65 is using the discovered Python interpreter at /usr/bin/python3.8, but future installation of another Python interpreter could change
+the meaning of that path. See https://docs.ansible.com/ansible-core/2.18/reference_appendices/interpreter_discovery.html for more information.
+
+2025-07-03 01:52:25,124 p=89806 u=aakhrif n=ansible INFO| ok: [159.203.140.65]
+2025-07-03 01:52:25,132 p=89806 u=aakhrif n=ansible INFO| TASK [copy inception into the cloud machine] *******************************************************************************************************************************************
+2025-07-03 01:52:28,064 p=89806 u=aakhrif n=ansible INFO| changed: [159.203.140.65]
+2025-07-03 01:52:28,066 p=89806 u=aakhrif n=ansible INFO| PLAY [installing dependencies] *********************************************************************************************************************************************************
+2025-07-03 01:52:28,075 p=89806 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-03 01:52:41,690 p=89806 u=aakhrif n=ansible INFO| ok: [159.203.140.65]
+2025-07-03 01:52:41,693 p=89806 u=aakhrif n=ansible INFO| TASK [updating packages] ***************************************************************************************************************************************************************
+2025-07-03 01:54:44,465 p=89806 u=aakhrif n=ansible INFO| changed: [159.203.140.65]
+2025-07-03 01:54:44,481 p=89806 u=aakhrif n=ansible INFO| TASK [installing docker and make] ******************************************************************************************************************************************************
+2025-07-03 01:55:25,778 p=89806 u=aakhrif n=ansible INFO| changed: [159.203.140.65]
+2025-07-03 01:55:25,787 p=89806 u=aakhrif n=ansible INFO| TASK [start and enable docker service] *************************************************************************************************************************************************
+2025-07-03 01:55:41,051 p=89806 u=aakhrif n=ansible INFO| ok: [159.203.140.65]
+2025-07-03 01:55:41,061 p=89806 u=aakhrif n=ansible INFO| TASK [add user to docker group] ********************************************************************************************************************************************************
+2025-07-03 01:55:55,034 p=89806 u=aakhrif n=ansible INFO| changed: [159.203.140.65]
+2025-07-03 01:55:55,037 p=89806 u=aakhrif n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
+2025-07-03 01:55:55,037 p=89806 u=aakhrif n=ansible INFO| 159.203.140.65             : ok=7    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

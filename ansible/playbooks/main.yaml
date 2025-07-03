@@ -1,0 +1,13 @@
+---
+- name: cloud-1
+  hosts: host
+  tasks:
+    - name: copy inception into the cloud machine
+      synchronize:
+        src: ../../inception/
+        dest: /home/inception
+        delete: no
+        recursive: yes
+        checksum: yes
+
+- import_playbook: ./requirements.yaml
