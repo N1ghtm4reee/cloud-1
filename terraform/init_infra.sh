@@ -1,6 +1,6 @@
 #!/bin/bash
 
-terraform apply -auto-approve
+terraform apply -auto-approve -lock=false
 
 
 echo "[host]" > ../ansible/inventory/hosts.ini

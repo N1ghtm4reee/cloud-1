@@ -11,3 +11,4 @@
         checksum: yes
 
 - import_playbook: ./requirements.yaml
+- import_playbook: ./run.yaml

@@ -9,6 +9,9 @@ cd terraform
 
 cd ..
 
+# to wait for Vm to finish starting
+sleep 10
+
 cd ansible
 # ansible phase
 ./run_ansible.sh

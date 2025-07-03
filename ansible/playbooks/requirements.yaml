@@ -5,48 +5,49 @@
   tasks:
     - name: updating packages
       apt:
+        name:
+          - apt-transport-https
+          - ca-certificates
+          - curl
+          - gnupg
+          - lsb-release
+        state: present
         update_cache: yes
-        upgrade: dist
-      when: ansible_os_family == "Debian"
-      
-    - name: installing docker and make
+
+    - name: Add Docker GPG key
+      apt_key:
+        url: https://download.docker.com/linux/ubuntu/gpg
+        state: present
+
+    - name: Add Docker APT repository
+      apt_repository:
+        repo: "deb [arch=amd64] https://download.docker.com/linux/ubuntu {{ ansible_distribution_release }} stable"
+        state: present
+        filename: docker
+
+    - name: Install Docker packages
       apt:
         name:
-          - docker.io
+          - docker-ce
+          - docker-ce-cli
+          - containerd.io
+        state: present
+        update_cache: yes
+    - name: Install make
+      apt:
+        name:
           - make
         state: present
-      when: ansible_os_family == "Debian"
-      
-    - name: start and enable docker service
+        update_cache: yes
+
+    - name: Enable and start Docker
       systemd:
         name: docker
-        state: started
         enabled: yes
-        
-    - name: add user to docker group
+        state: started
+
+    - name: Add current user to docker group (optional)
       user:
         name: "{{ ansible_user }}"
         groups: docker
         append: yes
-        
-    # - name: install docker compose
-    #   get_url:
-    #     url: "https://github.com/docker/compose/releases/latest/download/docker-compose-{{ ansible_system }}-{{ ansible_machine }}"
-    #     dest: /usr/local/bin/docker-compose
-    #     mode: '0755'
-    #     owner: root
-    #     group: root
-        
-    # - name: create docker-compose symlink (optional)
-    #   file:
-    #     src: /usr/local/bin/docker-compose
-    #     dest: /usr/bin/docker-compose
-    #     state: link
-        
-    # - name: verify docker compose installation
-    #   command: docker-compose --version
-    #   register: docker_compose_version
-      
-    # - name: display docker compose version
-    #   debug:
-    #     msg: "Docker Compose installed: {{ docker_compose_version.stdout }}"
