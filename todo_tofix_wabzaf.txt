@@ -1,0 +1,7 @@
+1- refactor ansible playbook to use ansible_docker_compose instead of docker compose and create volumes and network with ansible
+
+2- fix phpmyadmin cause its not working !!!
+
+3- add https certs and configure nginx to redirect http -> https and routes also
+
+i think for now that's all.
