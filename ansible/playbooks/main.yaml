@@ -10,5 +10,10 @@
         recursive: yes
         checksum: yes
 
-- import_playbook: ./requirements.yaml
-- import_playbook: ./run.yaml
+- name: install requirements
+  import_playbook: ./requirements.yaml
+  tags: install_requirements
+
+- name: run jobs
+  import_playbook: ./run.yaml
+  tags: run_job

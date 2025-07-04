@@ -1,32 +1,16 @@
-
 server {
-	listen 80 default_server;
-	listen [::]:80 default_server;
-
-	root /var/www/html/my-website;
-
-	index index.html index.htm index.nginx-debian.html;
-
-	server_name _;
-
-	location / {
-		try_files $uri $uri/ =404;
-	}
-
-}
-
-server {
- 
     listen 443 ssl;
-    server_name aakhrif.42.fr;
+    server_name yourdomain.com;
+
+    ssl_certificate /etc/nginx/certs/selfsigned.crt;
+    ssl_certificate_key /etc/nginx/certs/selfsigned.key;
+
 
     root /var/www/html/wordpress;
     index index.php index.html index.htm;
 
-    ssl_certificate /root/certs/localhost.crt;
-    ssl_certificate_key /root/certs/localhost.key;
-
     location / {
+        try_files $uri $uri/ =404;
     }
 
     location ~* \.php$ {
@@ -36,4 +20,14 @@ server {
         fastcgi_param   SCRIPT_FILENAME    $document_root$fastcgi_script_name;
         fastcgi_param   SCRIPT_NAME        $fastcgi_script_name;
     }
+
+    location /phpmyadmin {
+        proxy_pass http://phpmyadmin:80;
+        include /etc/nginx/proxy_params;
+    }
+}
+
+server {
+    listen 80;
+    return 301 https://$host$request_uri;
 }

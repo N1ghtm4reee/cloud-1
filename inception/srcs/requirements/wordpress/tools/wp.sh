@@ -45,7 +45,6 @@ wp theme install twentysixteen --path=/var/www/html/wordpress --activate --allow
 
 rm -rf /var/www/html/wordpress/wp-config-sample.php
 
-
 # # If accessing via IP
 # wp option update siteurl "${URL_LOCALHOST}:81" --path=/var/www/html/wordpress --allow-root
 # wp option update home "${URL_LOCALHOST}:81" --path=/var/www/html/wordpress --allow-root
