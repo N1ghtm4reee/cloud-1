@@ -1421,3 +1421,204 @@ meaning of that path. See https://docs.ansible.com/ansible-core/2.18/reference_a
 2025-07-04 22:27:01,639 p=62987 u=aakhrif n=ansible INFO| changed: [167.71.165.1]
 2025-07-04 22:27:01,641 p=62987 u=aakhrif n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
 2025-07-04 22:27:01,641 p=62987 u=aakhrif n=ansible INFO| 167.71.165.1               : ok=12   changed=7    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-07-05 16:55:50,959 p=8719 u=aakhrif n=ansible INFO| PLAY [cloud-1] *****************************************************************
+2025-07-05 16:55:50,972 p=8719 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *********************************************************
+2025-07-05 16:56:19,356 p=8719 u=aakhrif n=ansible WARNING| [WARNING]: Platform linux on host 159.65.174.57 is using the discovered Python
+interpreter at /usr/bin/python3.8, but future installation of another Python
+interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.18/reference_appendices/interpreter_discovery.html for more information.
+
+2025-07-05 16:56:19,356 p=8719 u=aakhrif n=ansible INFO| ok: [159.65.174.57]
+2025-07-05 16:56:19,362 p=8719 u=aakhrif n=ansible INFO| TASK [copy inception into the cloud machine] ***********************************
+2025-07-05 16:56:22,957 p=8719 u=aakhrif n=ansible ERROR| ERROR! The requested handler 'rebuild docker-compose' was not found in either the main handlers list nor in the listening handlers list
+2025-07-05 17:02:48,979 p=28557 u=aakhrif n=ansible INFO| PLAY [cloud-1] *************************************************************************************************************************************************************************
+2025-07-05 17:02:48,991 p=28557 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-05 17:03:11,317 p=28557 u=aakhrif n=ansible WARNING| [WARNING]: Platform linux on host 159.65.174.57 is using the discovered Python interpreter at /usr/bin/python3.8, but future installation of another Python interpreter could change
+the meaning of that path. See https://docs.ansible.com/ansible-core/2.18/reference_appendices/interpreter_discovery.html for more information.
+
+2025-07-05 17:03:11,317 p=28557 u=aakhrif n=ansible INFO| ok: [159.65.174.57]
+2025-07-05 17:03:11,327 p=28557 u=aakhrif n=ansible INFO| TASK [copy inception into the cloud machine] *******************************************************************************************************************************************
+2025-07-05 17:03:15,010 p=28557 u=aakhrif n=ansible INFO| changed: [159.65.174.57]
+2025-07-05 17:03:15,023 p=28557 u=aakhrif n=ansible INFO| RUNNING HANDLER [rebuild docker-compose] ***********************************************************************************************************************************************
+2025-07-05 17:03:31,974 p=28557 u=aakhrif n=ansible INFO| fatal: [159.65.174.57]: FAILED! => {"changed": false, "cmd": "docker-compose up -d --build", "msg": "[Errno 2] No such file or directory: b'docker-compose'", "rc": 2, "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+2025-07-05 17:03:31,975 p=28557 u=aakhrif n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
+2025-07-05 17:03:31,975 p=28557 u=aakhrif n=ansible INFO| 159.65.174.57              : ok=2    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-07-05 17:04:22,794 p=28894 u=aakhrif n=ansible INFO| PLAY [cloud-1] *************************************************************************************************************************************************************************
+2025-07-05 17:04:22,798 p=28894 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-05 17:04:41,839 p=28894 u=aakhrif n=ansible WARNING| [WARNING]: Platform linux on host 159.65.174.57 is using the discovered Python interpreter at /usr/bin/python3.8, but future installation of another Python interpreter could change
+the meaning of that path. See https://docs.ansible.com/ansible-core/2.18/reference_appendices/interpreter_discovery.html for more information.
+
+2025-07-05 17:04:41,839 p=28894 u=aakhrif n=ansible INFO| ok: [159.65.174.57]
+2025-07-05 17:04:41,844 p=28894 u=aakhrif n=ansible INFO| TASK [copy inception into the cloud machine] *******************************************************************************************************************************************
+2025-07-05 17:04:45,434 p=28894 u=aakhrif n=ansible ERROR| ERROR! The requested handler 'rebuild docker-compose' was not found in either the main handlers list nor in the listening handlers list
+2025-07-05 17:08:17,701 p=29648 u=aakhrif n=ansible INFO| PLAY [cloud-1] *************************************************************************************************************************************************************************
+2025-07-05 17:08:17,713 p=29648 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-05 17:08:37,540 p=29648 u=aakhrif n=ansible WARNING| [WARNING]: Platform linux on host 159.65.174.57 is using the discovered Python interpreter at /usr/bin/python3.8, but future installation of another Python interpreter could change
+the meaning of that path. See https://docs.ansible.com/ansible-core/2.18/reference_appendices/interpreter_discovery.html for more information.
+
+2025-07-05 17:08:37,540 p=29648 u=aakhrif n=ansible INFO| ok: [159.65.174.57]
+2025-07-05 17:08:37,544 p=29648 u=aakhrif n=ansible INFO| TASK [copy inception into the cloud machine] *******************************************************************************************************************************************
+2025-07-05 17:08:40,744 p=29648 u=aakhrif n=ansible INFO| changed: [159.65.174.57]
+2025-07-05 17:08:40,751 p=29648 u=aakhrif n=ansible INFO| RUNNING HANDLER [rebuild docker-compose] ***********************************************************************************************************************************************
+2025-07-05 17:08:56,367 p=29648 u=aakhrif n=ansible INFO| fatal: [159.65.174.57]: FAILED! => {"changed": false, "cmd": "docker-compose up -d --build", "msg": "[Errno 2] No such file or directory: b'docker-compose'", "rc": 2, "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+2025-07-05 17:08:56,369 p=29648 u=aakhrif n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
+2025-07-05 17:08:56,369 p=29648 u=aakhrif n=ansible INFO| 159.65.174.57              : ok=2    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-07-05 17:11:58,413 p=30345 u=aakhrif n=ansible INFO| PLAY [cloud-1] *************************************************************************************************************************************************************************
+2025-07-05 17:11:58,421 p=30345 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-05 17:12:20,288 p=30345 u=aakhrif n=ansible WARNING| [WARNING]: Platform linux on host 159.65.174.57 is using the discovered Python interpreter at /usr/bin/python3.8, but future installation of another Python interpreter could change
+the meaning of that path. See https://docs.ansible.com/ansible-core/2.18/reference_appendices/interpreter_discovery.html for more information.
+
+2025-07-05 17:12:20,288 p=30345 u=aakhrif n=ansible INFO| ok: [159.65.174.57]
+2025-07-05 17:12:20,293 p=30345 u=aakhrif n=ansible INFO| TASK [copy inception into the cloud machine] *******************************************************************************************************************************************
+2025-07-05 17:12:24,082 p=30345 u=aakhrif n=ansible INFO| changed: [159.65.174.57]
+2025-07-05 17:12:24,094 p=30345 u=aakhrif n=ansible INFO| RUNNING HANDLER [rebuild infra] ********************************************************************************************************************************************************
+2025-07-05 17:12:40,640 p=30345 u=aakhrif n=ansible INFO| fatal: [159.65.174.57]: FAILED! => {"changed": false, "cmd": "make re", "msg": "[Errno 2] No such file or directory: b'make'", "rc": 2, "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+2025-07-05 17:12:40,642 p=30345 u=aakhrif n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
+2025-07-05 17:12:40,642 p=30345 u=aakhrif n=ansible INFO| 159.65.174.57              : ok=2    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-07-05 17:14:39,345 p=30651 u=aakhrif n=ansible ERROR| ERROR! 'synchronize' is not a valid attribute for a Play
+
+The error appears to be in '/home/aakhrif/cloud-1/ansible/playbooks/main.yaml': line 10, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: copy inception into the cloud machine
+  ^ here
+
+2025-07-05 17:15:47,137 p=30723 u=aakhrif n=ansible ERROR| ERROR! this task 'import_playbook' has extra params, which is only allowed in the following modules: raw, win_shell, meta, set_fact, import_role, win_command, include_tasks, shell, include_vars, script, group_by, include_role, command, add_host, import_tasks
+
+The error appears to be in '/home/aakhrif/cloud-1/ansible/playbooks/main.yaml': line 12, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  tasks:
+    - name: install requirements
+      ^ here
+
+2025-07-05 17:16:32,940 p=30810 u=aakhrif n=ansible ERROR| ERROR! 'hosts' is not a valid attribute for a PlaybookInclude
+
+The error appears to be in '/home/aakhrif/cloud-1/ansible/playbooks/main.yaml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+- name: install requirements
+  ^ here
+
+2025-07-05 17:17:21,730 p=30883 u=aakhrif n=ansible INFO| PLAY [installing dependencies] *********************************************************************************************************************************************************
+2025-07-05 17:17:21,737 p=30883 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-05 17:17:49,697 p=30883 u=aakhrif n=ansible WARNING| [WARNING]: Platform linux on host 159.65.174.57 is using the discovered Python interpreter at /usr/bin/python3.8, but future installation of another Python interpreter could change
+the meaning of that path. See https://docs.ansible.com/ansible-core/2.18/reference_appendices/interpreter_discovery.html for more information.
+
+2025-07-05 17:17:49,697 p=30883 u=aakhrif n=ansible INFO| ok: [159.65.174.57]
+2025-07-05 17:17:49,701 p=30883 u=aakhrif n=ansible INFO| TASK [updating packages] ***************************************************************************************************************************************************************
+2025-07-05 17:17:58,223 p=30883 u=aakhrif n=ansible ERROR|  [ERROR]: User interrupted execution
+
+2025-07-05 17:18:13,897 p=31024 u=aakhrif n=ansible INFO| PLAY [installing dependencies] *********************************************************************************************************************************************************
+2025-07-05 17:18:13,905 p=31024 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-05 17:18:37,730 p=31024 u=aakhrif n=ansible WARNING| [WARNING]: Platform linux on host 159.65.174.57 is using the discovered Python interpreter at /usr/bin/python3.8, but future installation of another Python interpreter could change
+the meaning of that path. See https://docs.ansible.com/ansible-core/2.18/reference_appendices/interpreter_discovery.html for more information.
+
+2025-07-05 17:18:37,730 p=31024 u=aakhrif n=ansible INFO| ok: [159.65.174.57]
+2025-07-05 17:18:37,734 p=31024 u=aakhrif n=ansible INFO| TASK [updating packages] ***************************************************************************************************************************************************************
+2025-07-05 17:18:57,266 p=31024 u=aakhrif n=ansible INFO| ok: [159.65.174.57]
+2025-07-05 17:18:57,271 p=31024 u=aakhrif n=ansible INFO| TASK [Add Docker GPG key] **************************************************************************************************************************************************************
+2025-07-05 17:19:16,306 p=31024 u=aakhrif n=ansible INFO| changed: [159.65.174.57]
+2025-07-05 17:19:16,313 p=31024 u=aakhrif n=ansible INFO| TASK [Add Docker APT repository] *******************************************************************************************************************************************************
+2025-07-05 17:19:42,120 p=31024 u=aakhrif n=ansible INFO| changed: [159.65.174.57]
+2025-07-05 17:19:42,125 p=31024 u=aakhrif n=ansible INFO| TASK [Install Docker packages] *********************************************************************************************************************************************************
+2025-07-05 17:20:31,676 p=31024 u=aakhrif n=ansible INFO| changed: [159.65.174.57]
+2025-07-05 17:20:31,682 p=31024 u=aakhrif n=ansible INFO| TASK [Install make] ********************************************************************************************************************************************************************
+2025-07-05 17:20:56,051 p=31024 u=aakhrif n=ansible INFO| changed: [159.65.174.57]
+2025-07-05 17:20:56,064 p=31024 u=aakhrif n=ansible INFO| TASK [Enable and start Docker] *********************************************************************************************************************************************************
+2025-07-05 17:21:15,506 p=31024 u=aakhrif n=ansible INFO| ok: [159.65.174.57]
+2025-07-05 17:21:15,512 p=31024 u=aakhrif n=ansible INFO| TASK [Add current user to docker group (optional)] *************************************************************************************************************************************
+2025-07-05 17:21:32,607 p=31024 u=aakhrif n=ansible INFO| changed: [159.65.174.57]
+2025-07-05 17:21:32,611 p=31024 u=aakhrif n=ansible INFO| PLAY [cloud-1] *************************************************************************************************************************************************************************
+2025-07-05 17:21:32,621 p=31024 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-05 17:21:50,945 p=31024 u=aakhrif n=ansible INFO| ok: [159.65.174.57]
+2025-07-05 17:21:50,950 p=31024 u=aakhrif n=ansible INFO| TASK [copy inception into the cloud machine] *******************************************************************************************************************************************
+2025-07-05 17:21:54,550 p=31024 u=aakhrif n=ansible INFO| changed: [159.65.174.57]
+2025-07-05 17:21:54,558 p=31024 u=aakhrif n=ansible INFO| RUNNING HANDLER [rebuild infra] ********************************************************************************************************************************************************
+2025-07-05 17:24:06,519 p=31024 u=aakhrif n=ansible INFO| changed: [159.65.174.57]
+2025-07-05 17:24:06,522 p=31024 u=aakhrif n=ansible INFO| PLAY [Run containers] ******************************************************************************************************************************************************************
+2025-07-05 17:24:06,533 p=31024 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-05 17:24:29,157 p=31024 u=aakhrif n=ansible INFO| ok: [159.65.174.57]
+2025-07-05 17:24:29,167 p=31024 u=aakhrif n=ansible INFO| TASK [Run make in /home/inception] *****************************************************************************************************************************************************
+2025-07-05 17:24:46,554 p=31024 u=aakhrif n=ansible INFO| changed: [159.65.174.57]
+2025-07-05 17:24:46,555 p=31024 u=aakhrif n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
+2025-07-05 17:24:46,555 p=31024 u=aakhrif n=ansible INFO| 159.65.174.57              : ok=13   changed=8    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-07-05 17:30:42,749 p=31833 u=aakhrif n=ansible INFO| PLAY [installing dependencies] *********************************************************************************************************************************************************
+2025-07-05 17:30:42,757 p=31833 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-05 17:31:06,392 p=31833 u=aakhrif n=ansible WARNING| [WARNING]: Platform linux on host 159.65.174.57 is using the discovered Python interpreter at /usr/bin/python3.8, but future installation of another Python interpreter could change
+the meaning of that path. See https://docs.ansible.com/ansible-core/2.18/reference_appendices/interpreter_discovery.html for more information.
+
+2025-07-05 17:31:06,393 p=31833 u=aakhrif n=ansible INFO| ok: [159.65.174.57]
+2025-07-05 17:31:06,397 p=31833 u=aakhrif n=ansible INFO| TASK [updating packages] ***************************************************************************************************************************************************************
+2025-07-05 17:31:26,527 p=31833 u=aakhrif n=ansible INFO| ok: [159.65.174.57]
+2025-07-05 17:31:26,533 p=31833 u=aakhrif n=ansible INFO| TASK [Add Docker GPG key] **************************************************************************************************************************************************************
+2025-07-05 17:31:42,181 p=31833 u=aakhrif n=ansible INFO| ok: [159.65.174.57]
+2025-07-05 17:31:42,188 p=31833 u=aakhrif n=ansible INFO| TASK [Add Docker APT repository] *******************************************************************************************************************************************************
+2025-07-05 17:31:58,780 p=31833 u=aakhrif n=ansible INFO| ok: [159.65.174.57]
+2025-07-05 17:31:58,789 p=31833 u=aakhrif n=ansible INFO| TASK [Install Docker packages] *********************************************************************************************************************************************************
+2025-07-05 17:32:17,836 p=31833 u=aakhrif n=ansible INFO| ok: [159.65.174.57]
+2025-07-05 17:32:17,847 p=31833 u=aakhrif n=ansible INFO| TASK [Install make] ********************************************************************************************************************************************************************
+2025-07-05 17:32:38,820 p=31833 u=aakhrif n=ansible INFO| ok: [159.65.174.57]
+2025-07-05 17:32:38,829 p=31833 u=aakhrif n=ansible INFO| TASK [Enable and start Docker] *********************************************************************************************************************************************************
+2025-07-05 17:32:56,126 p=31833 u=aakhrif n=ansible INFO| ok: [159.65.174.57]
+2025-07-05 17:32:56,135 p=31833 u=aakhrif n=ansible INFO| TASK [Add current user to docker group (optional)] *************************************************************************************************************************************
+2025-07-05 17:33:12,721 p=31833 u=aakhrif n=ansible INFO| ok: [159.65.174.57]
+2025-07-05 17:33:12,724 p=31833 u=aakhrif n=ansible INFO| PLAY [cloud-1] *************************************************************************************************************************************************************************
+2025-07-05 17:33:12,730 p=31833 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-05 17:33:32,388 p=31833 u=aakhrif n=ansible INFO| ok: [159.65.174.57]
+2025-07-05 17:33:32,394 p=31833 u=aakhrif n=ansible INFO| TASK [copy inception into the cloud machine] *******************************************************************************************************************************************
+2025-07-05 17:33:36,093 p=31833 u=aakhrif n=ansible INFO| changed: [159.65.174.57]
+2025-07-05 17:33:36,104 p=31833 u=aakhrif n=ansible INFO| RUNNING HANDLER [rebuild infra] ********************************************************************************************************************************************************
+2025-07-05 17:34:26,344 p=31833 u=aakhrif n=ansible INFO| changed: [159.65.174.57]
+2025-07-05 17:34:26,346 p=31833 u=aakhrif n=ansible INFO| PLAY [Run containers] ******************************************************************************************************************************************************************
+2025-07-05 17:34:26,353 p=31833 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-05 17:34:44,271 p=31833 u=aakhrif n=ansible INFO| ok: [159.65.174.57]
+2025-07-05 17:34:44,277 p=31833 u=aakhrif n=ansible INFO| TASK [Run make in /home/inception] *****************************************************************************************************************************************************
+2025-07-05 17:35:02,075 p=31833 u=aakhrif n=ansible INFO| changed: [159.65.174.57]
+2025-07-05 17:35:02,077 p=31833 u=aakhrif n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
+2025-07-05 17:35:02,077 p=31833 u=aakhrif n=ansible INFO| 159.65.174.57              : ok=13   changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-07-05 17:36:39,798 p=32270 u=aakhrif n=ansible INFO| PLAY [installing dependencies] *********************************************************************************************************************************************************
+2025-07-05 17:36:39,805 p=32270 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-05 17:36:43,202 p=32270 u=aakhrif n=ansible ERROR|  [ERROR]: User interrupted execution
+
+2025-07-05 17:36:46,266 p=32288 u=aakhrif n=ansible INFO| PLAY [installing dependencies] *********************************************************************************************************************************************************
+2025-07-05 17:36:46,273 p=32288 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-05 17:37:14,011 p=32288 u=aakhrif n=ansible WARNING| [WARNING]: Platform linux on host 159.65.174.57 is using the discovered Python interpreter at /usr/bin/python3.8, but future installation of another Python interpreter could change
+the meaning of that path. See https://docs.ansible.com/ansible-core/2.18/reference_appendices/interpreter_discovery.html for more information.
+
+2025-07-05 17:37:14,011 p=32288 u=aakhrif n=ansible INFO| ok: [159.65.174.57]
+2025-07-05 17:37:14,016 p=32288 u=aakhrif n=ansible INFO| TASK [updating packages] ***************************************************************************************************************************************************************
+2025-07-05 17:37:32,224 p=32288 u=aakhrif n=ansible INFO| ok: [159.65.174.57]
+2025-07-05 17:37:32,230 p=32288 u=aakhrif n=ansible INFO| TASK [Add Docker GPG key] **************************************************************************************************************************************************************
+2025-07-05 17:37:50,530 p=32288 u=aakhrif n=ansible INFO| ok: [159.65.174.57]
+2025-07-05 17:37:50,539 p=32288 u=aakhrif n=ansible INFO| TASK [Add Docker APT repository] *******************************************************************************************************************************************************
+2025-07-05 17:38:07,521 p=32288 u=aakhrif n=ansible INFO| ok: [159.65.174.57]
+2025-07-05 17:38:07,528 p=32288 u=aakhrif n=ansible INFO| TASK [Install Docker packages] *********************************************************************************************************************************************************
+2025-07-05 17:38:24,936 p=32288 u=aakhrif n=ansible INFO| ok: [159.65.174.57]
+2025-07-05 17:38:24,942 p=32288 u=aakhrif n=ansible INFO| TASK [Install make] ********************************************************************************************************************************************************************
+2025-07-05 17:38:42,851 p=32288 u=aakhrif n=ansible INFO| ok: [159.65.174.57]
+2025-07-05 17:38:42,858 p=32288 u=aakhrif n=ansible INFO| TASK [Enable and start Docker] *********************************************************************************************************************************************************
+2025-07-05 17:39:00,669 p=32288 u=aakhrif n=ansible INFO| ok: [159.65.174.57]
+2025-07-05 17:39:00,675 p=32288 u=aakhrif n=ansible INFO| TASK [Add current user to docker group (optional)] *************************************************************************************************************************************
+2025-07-05 17:39:17,263 p=32288 u=aakhrif n=ansible INFO| ok: [159.65.174.57]
+2025-07-05 17:39:17,266 p=32288 u=aakhrif n=ansible INFO| PLAY [cloud-1] *************************************************************************************************************************************************************************
+2025-07-05 17:39:17,273 p=32288 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-05 17:39:35,286 p=32288 u=aakhrif n=ansible INFO| ok: [159.65.174.57]
+2025-07-05 17:39:35,292 p=32288 u=aakhrif n=ansible INFO| TASK [copy inception into the cloud machine] *******************************************************************************************************************************************
+2025-07-05 17:39:39,095 p=32288 u=aakhrif n=ansible INFO| ok: [159.65.174.57]
+2025-07-05 17:39:39,097 p=32288 u=aakhrif n=ansible INFO| PLAY [Run containers] ******************************************************************************************************************************************************************
+2025-07-05 17:39:39,103 p=32288 u=aakhrif n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-07-05 17:39:59,041 p=32288 u=aakhrif n=ansible INFO| ok: [159.65.174.57]
+2025-07-05 17:39:59,046 p=32288 u=aakhrif n=ansible INFO| TASK [Run make in /home/inception] *****************************************************************************************************************************************************
+2025-07-05 17:40:15,522 p=32288 u=aakhrif n=ansible INFO| skipping: [159.65.174.57]
+2025-07-05 17:40:15,522 p=32288 u=aakhrif n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
+2025-07-05 17:40:15,523 p=32288 u=aakhrif n=ansible INFO| 159.65.174.57              : ok=11   changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
