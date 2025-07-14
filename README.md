@@ -57,3 +57,4 @@ The goal of this project is to deploy a **WordPress blog** and its required serv
 ```bash
 git clone https://github.com/N1ghtm4reee/cloud-1.git
 cd cloud-1
+./run.sh
