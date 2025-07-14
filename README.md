@@ -1,6 +1,6 @@
 # ☁️ Cloud-1: Automated Inception Deployment
 
-Welcome to **Cloud-1**, a DevOps project inspired by 42's [Inception](https://github.com/42Paris/inception), but enhanced using modern infrastructure-as-code and cloud provisioning tools.
+Welcome to **Cloud-1**, a DevOps project inspired by 42's [Inception](https://github.com/N1ghtm4reee/inception), but enhanced using modern infrastructure-as-code and cloud provisioning tools.
 
 This repository showcases an **automated deployment of a WordPress-based infrastructure** with multiple services running in **Docker containers**, provisioned on **DigitalOcean** using **Terraform** and configured with **Ansible**.
 
@@ -46,7 +46,6 @@ The goal of this project is to deploy a **WordPress blog** and its required serv
 - **Fully automated infrastructure**: One command provisions the server and sets everything up.
 - **1 process = 1 container**: Each service runs in an isolated container.
 - **Persistent data**: WordPress content and database survive reboots.
-- **No SSL required**: HTTP access only (for learning purposes).
 - **Ansible + Terraform combo**: Clean separation of infra and configuration.
 
 ---
